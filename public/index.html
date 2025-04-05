@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Extract audio from video files easily with our free online tool. Convert video to MP3 quickly and share your audio files.">
+    <meta name="keywords" content="video to audio, extract audio from video, video to mp3, audio extractor, online audio converter">
+    <meta name="robots" content="index, follow">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <meta property="og:title" content="Video Audio Extractor - Convert Video to MP3 Online">
+    <meta property="og:description" content="Extract audio from video files easily with our free online tool. Convert video to MP3 quickly and share your audio files.">
+    <meta property="og:image" content="/og-image.png">
+    <meta property="og:url" content="#"> 
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Video Audio Extractor">
+    <title>Video Audio Extractor - Convert Video to MP3 Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Video Audio Extractor</h1>
+    </header>
+    
+    <main class="container">
+        <section class="upload-section">
+            <div class="file-input-wrapper">
+                <input type="file" id="videoInput" accept="video/*" aria-label="Select video file">
+            </div>
+            <button id="uploadBtn" aria-label="Upload and process video">
+                <span class="btn-text">Upload and Process</span>
+                <span class="spinner hidden"></span>
+            </button>
+        </section>
+
+        <section id="result" class="result-section hidden" aria-live="polite">
+            <h2>Result</h2>
+            <p id="message" class="message"></p>
+            <audio id="audioPlayer" controls preload="none"></audio>
+            <a id="downloadLink" href="#" download="extracted-audio.mp3" class="download-btn">Download MP3</a>
+            <button id="shareBtn" class="share-btn hidden" aria-label="Generate shareable link">
+                <span class="btn-text">Generate Shareable Link</span>
+                <span class="spinner hidden"></span>
+            </button>
+            <p id="shareLink" class="share-link hidden"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Video Audio Extractor. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
